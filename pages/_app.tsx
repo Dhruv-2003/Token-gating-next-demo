@@ -1,6 +1,14 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.css";
+import type { AppProps } from "next/app";
+import { NextGatingWrapper } from "token-gating-sdk";
+// import { Ne} from 'token-gating'
+import { configData } from "../config/config";
+const API_KEY: any = process.env.NEXT_PUBLIC_ALCHEMY_API_KEY;
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <NextGatingWrapper config={configData} alchemyApiKey={API_KEY}>
+      <Component {...pageProps} />
+    </NextGatingWrapper>
+  );
 }
