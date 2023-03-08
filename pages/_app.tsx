@@ -1,7 +1,8 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import { NextGatingWrapper } from "token-gating-sdk";
-// import { Ne} from 'token-gating'
+import "@rainbow-me/rainbowkit/styles.css";
+
 import { configData } from "../config/config";
 const API_KEY: any = process.env.NEXT_PUBLIC_ALCHEMY_API_KEY;
 
