@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Token-Gating-Replit-Template
 
-First, run the development server:
+This is Replit Template for the Next.js implementation of Token-gating-SDK in typescript. It can be forked to fire up a REPL with token-gating implemented and can be customized and configure according to your needs.
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+## Guide to use the Template
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1 . Fork the Replit from the template page
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+![Screenshot 2023-03-16 at 7](Screenshot%202023-03-16%20at%207.47.14%20PM.png)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+2 . Then REPL will start up and dependencies will be installed , if they don't , use `npm install` to do so.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+3 . Now the main step is to configure , go to `config/config.ts`. You can customize it according to the settings you want to , pages and conditions. [Click here for a detailed guide](https://github.com/Dhruv-2003/token-gating-tool#how-to-create-the-config-file-)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+I have added a demo Config file & pages which can be replaced and deleted.
 
-## Learn More
+4 . Last thing is to add `ALCHEMY_API_KEY`. Go to Secrets under Tools , add a new environment variable named `ALCHEMY_API_KEY` and the value as the API key.
 
-To learn more about Next.js, take a look at the following resources:
+Get an API key from [Alchemy](https://dashboard.alchemy.com/signup/?a=f8afc2202c)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Screenshot 2023-03-16 at 9](Screenshot%202023-03-16%20at%209.29.38%20PM.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Andd!! The REPL is good to go , it is token gated now 
 
-## Deploy on Vercel
+## Appendix
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+The main SDK can be found here on replit : [SDK-REPL](https://replit.com/@DhruvAgarwal24/token-gating-tool?v=1)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The package can be found on npm : [npm-sdk](https://www.npmjs.com/package/token-gating-sdk)
+
+The code on github is : [github-sdk](https://github.com/Dhruv-2003/token-gating-tool)
+
+## Acknowledgements
+
+Build in partnership with `Alchemy` X `Replit`
+
+## Contact
+
+For any queries , you can raise an issue on github or reach out me at : contact.dhruvagarwal@gmail.com
